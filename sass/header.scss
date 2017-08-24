@@ -1,0 +1,29 @@
+$width:1230px;
+$height:34px;
+.header-nav{
+    width:100% ;
+    height:$height;
+    
+    .header-con{
+        width: $width;
+        height: $height;
+        line-height: $height;
+        margin: 0 auto;
+        .header-login{
+            float: left;
+            
+            a{
+                color: #fe6400;
+            }
+        }
+        .header-list{
+            float: right;
+            ul{
+                list-style: none;
+                li{
+                    float: left;
+                }
+            }
+        }
+    }
+}
