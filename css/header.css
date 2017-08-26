@@ -1,6 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, a:visited, a:active {
+  color: #555;
+}
+
+a:hover {
+  color: #fe6400;
+}
+
 .header-nav {
   width: 100%;
   height: 34px;
+  border-bottom: 1px solid #e5e5e5;
 }
 .header-nav .header-con {
   width: 1230px;
@@ -16,10 +35,98 @@
 }
 .header-nav .header-con .header-list {
   float: right;
+  height: 34px;
 }
 .header-nav .header-con .header-list ul {
+  float: right;
   list-style: none;
 }
 .header-nav .header-con .header-list ul li {
   float: left;
+  width: 65px;
+  text-align: center;
+}
+.header-nav .header-con .header-list ul li:hover {
+  border-bottom: 1px solid white;
+  border-right: 1px solid #e5e5e5;
+  border-left: 1px solid #e5e5e5;
+  width: 63px;
+}
+
+.header-down {
+  width: 1230px;
+  margin: 15px auto;
+  padding: 15px 0;
+  overflow: hidden;
+}
+.header-down .logo {
+  float: left;
+}
+.header-down .logo h1 {
+  width: 191px;
+  height: 54px;
+  background-image: url(/img/logo.png);
+  background-size: 191px 54px;
+  margin-top: 30px;
+}
+.header-down .logo h1 a {
+  display: block;
+  width: 191px;
+  height: 90px;
+}
+.header-down .choice {
+  background-color: #fe6400;
+  color: white;
+}
+.header-down .header-sskuang {
+  float: left;
+  margin-left: 120px;
+}
+.header-down .header-sskuang .sskuang .ssk-top div {
+  float: left;
+  padding: 3px 15px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.header-down .header-sskuang .sskuang .sskdown .sstext {
+  width: 454px;
+  height: 24px;
+  border: 2px solid #fe6400;
+  padding: 4px;
+  outline: none;
+  float: left;
+}
+.header-down .header-sskuang .sskuang .sskdown .button {
+  height: 36px;
+  width: 100px;
+  float: left;
+  border: 0;
+  background-color: #fe6400;
+  outline: none;
+  font-size: 16px;
+  color: white;
+}
+.header-down .header-cart {
+  float: right;
+  border: 1px solid #ddd;
+  width: 188px;
+  height: 33px;
+  margin-top: 25px;
+}
+.header-down .header-cart a {
+  display: inline-block;
+  width: 133px;
+  height: 33px;
+  line-height: 33px;
+  text-align: center;
+}
+.header-down .header-cart span {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #fe6400;
+  text-align: center;
+  line-height: 22px;
+  color: white;
 }

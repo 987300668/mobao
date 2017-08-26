@@ -1,9 +1,10 @@
 require.config({
 	baseUrl:"/",
 	paths:{
-		"jq":"lib/jquery/jquery-1.12.4.min",
+		"jquery":"lib/jquery/jquery-1.12.4.min",
 		"cookie":"lib/jquery_plugins/jquery.cookie",
 		"temp":"lib/arttemplate/template-native",
-		"handf":"js/headerfooter"
+		"handf":"js/headerfooter",
+		"register":"js/register"
 	}
-})
+});

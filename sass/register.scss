@@ -1,0 +1,61 @@
+.logo{
+    width: 1230px;
+    margin: 0 auto;
+    
+    a{
+        display: inline-block;
+        width: 191px;
+        height: 50px;
+        background: url(../img/logo.png)no-repeat;
+        margin-top: 30px;
+      
+    }
+    span{
+        font-size: 20px;
+        margin-left: 10px;
+        color: #666666;
+    }   
+       
+    
+}
+.re-body{
+    width: 100%;
+    height: 520px;
+    padding-top: 50px;
+    .reg{
+        width: 1230px;
+        height: 500px;
+        background: url(../img/ssx.png)no-repeat;
+    }
+}
+.reg-form{
+    width: 660px;
+    height: 520px;
+    float: right;
+    padding: 50px;
+    margin-right: 50px;
+}
+.input-group{
+    margin-bottom: 15px;   
+}
+.glyphicon{
+    
+    font-size: 12px;
+}
+.input-group-addon{
+    background: white;
+   
+}
+input{
+    font-size: 15px;
+    &::-webkit-input-placeholder{
+        font-size: 15px;
+    }
+}
+button{
+    width: 100%;
+    background-color: #f0ad4e;
+    border: none;
+    height: 40px;
+    color: white;
+}

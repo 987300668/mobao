@@ -1,5 +1,5 @@
 require(["config"],function(){
-	require(["jq","handf"],function(){
-		
+	require(["jquery","handf","register"],function($){
+
 	})
 })

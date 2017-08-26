@@ -1,0 +1,77 @@
+.footer-top {
+  width: 1230px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.footer-top dl {
+  width: 130px;
+  float: left;
+}
+.footer-top dl dt {
+  font-size: 16px;
+  color: #e46714;
+}
+.footer-top dl dd {
+  font-size: 14px;
+}
+.footer-top ul {
+  width: 400px;
+  float: left;
+  list-style: none;
+}
+.footer-top ul li {
+  margin-bottom: 20px;
+}
+.footer-top ul span {
+  margin-right: 10px;
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: url(../img/footer_icon.png) no-repeat;
+}
+.footer-top ul li:nth-child(2) span {
+  background-position: 0 -35px;
+}
+.footer-top ul li:nth-child(3) span {
+  background-position: 0 -70px;
+}
+.footer-top ul p {
+  display: inline-block;
+}
+
+dt, dd {
+  line-height: 30px;
+}
+
+.ewmad, .ewmios {
+  float: left;
+  margin-left: 20px;
+}
+.ewmad img, .ewmios img {
+  width: 120px;
+  height: 120px;
+  display: block;
+}
+.ewmad span, .ewmios span {
+  text-align: center;
+  margin-left: 30px;
+}
+
+.ewmios {
+  margin-left: 50px;
+}
+
+.footer-down {
+  width: 100%;
+  background: #666;
+  padding: 10px 0;
+  margin-top: 10px;
+}
+.footer-down .fot {
+  width: 1230px;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 35px;
+  font-size: 14px;
+  color: white;
+}
