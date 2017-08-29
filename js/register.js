@@ -2,8 +2,30 @@ define(["jquery","cookie"],function($){
 		var _uesername,
 			_password,
 			_phone;
+			
 		$("#username").blur(function(){
-			_uesername=$(this).val();		
+			_uesername=$(this).val();
+			
+			var xhr = new XMLHttpRequest();
+				
+			xhr.open("get", "/js/check.php?username=" + _uesername, true);
+			
+			xhr.send();
+			xhr.onreadystatechange = function(){
+				if (xhr.readyState === 4) {
+					if (xhr.status === 200) { 
+				
+						var data = xhr.responseText;
+//						console.log(data)
+//						data = JSON.parse(data);
+						if (data.status === 0) {
+							$("#username").innerHTML = "用户名已存在，请重新选择新用户名";							
+						} 
+					}
+				}
+			}
+			
+			
 		})
 		$("#password").blur(function(){
 			var m=/^.{6,20}$/;
@@ -67,4 +89,24 @@ define(["jquery","cookie"],function($){
 				}
 			});
 		})
+		
+		//注册 提交 没写提交到php文件，只写了生产cookie。
+		$("#bt").click(function(){			
+			if(!_uesername||!_password||!_phone){
+				alert("请输入先正确的填写注册资料")
+			}else{
+				var _user ={
+					username:_uesername,
+					passwd:_password,
+					phone:_phone
+				};
+				
+				$.cookie.json=true;
+				$.cookie("loginUser",_user,{expires:7,path:"/"})
+
+			}
+			
+			
+		})
+				
 })

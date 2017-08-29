@@ -1,0 +1,110 @@
+.banner {
+  height: 480px;
+  width: 100%;
+}
+
+.banner-box {
+  height: 480px;
+  width: 1250px;
+  overflow: hidden;
+  position: relative;
+  margin: 0 auto;
+}
+.banner-box .lunbo-box {
+  position: absolute;
+  margin: 0 auto;
+}
+.banner-box .lunbo-box .lunbo {
+  float: left;
+  overflow: hidden;
+  height: 480px;
+  width: 1250px;
+}
+
+.list-body {
+  width: 1230px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+.list-body .title {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-shadow: 0 2px 1px #fff;
+  position: relative;
+}
+.list-body .title span {
+  font-size: 20px;
+  color: #fe6400;
+}
+.list-body .title div span {
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  padding: 5px;
+  margin-right: 10px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0 2px 1px #000;
+  line-height: 49px;
+  font-weight: 400;
+}
+.list-body .com {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.list-body .com li {
+  width: 300px;
+  float: left;
+  margin-right: 7px;
+}
+.list-body .com li a {
+  display: block;
+  color: #555;
+}
+.list-body .com li img {
+  width: 100%;
+}
+.list-body .com li span {
+  color: #e46714;
+  font-size: 18px;
+}
+.list-body .com li del {
+  font-size: 13px;
+}
+.list-body .com li p {
+  margin: 10px 0;
+}
+.list-body .com li b {
+  float: right;
+  font-size: 14px;
+  line-height: 22px;
+  background: #fe6400;
+  color: #fff;
+  width: 80px;
+  text-align: center;
+  font-weight: 100;
+}
+.list-body .com2 {
+  width: 100%;
+  overflow: hidden;
+}
+.list-body .com2 li {
+  float: left;
+  margin-right: 15px;
+}
+.list-body .com2 li a {
+  display: block;
+}
+.list-body .like li {
+  margin-right: 20px;
+}
+.list-body .like li:nth-child(2), .list-body .like li:nth-child(3) {
+  margin-bottom: 15px;
+}

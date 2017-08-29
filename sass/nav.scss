@@ -1,0 +1,88 @@
+ul{
+    list-style: none;
+}
+.nav-box{
+    width: 100%;
+    .nav-body{
+        width: 1230px;
+        margin: 0 auto;
+        height: 42px;
+        position: relative;
+        .nav-y{
+            position: absolute;
+            z-index: 1;
+            width: 190px;
+            height: 523px;
+            background: #fe6400;
+            li:hover ul{
+                    display: block;
+                }
+            .li-hover:hover a{
+                color: #333;
+                transition: all 0.5s linear; 
+            } 
+            .li-hover:hover{
+                background: #FE8A4C;
+                transition: all 0.5s linear; 
+            }   
+            li{
+                height: 42px;
+                line-height: 42px;
+                position: relative;
+                a{
+                    color: white;
+                    display: block;
+                    padding-left: 20px;
+                    font-size: 13px;
+                }
+                
+                
+                .ul-son{
+                    display: none;
+                    left: 190px;
+                    z-index: 999;
+                    border: 1px solid #ccc;
+                    height: auto;
+                    width: 190px;
+                    position: absolute;
+                    top: 0;
+                    background-color: white;
+                    li{
+                        height: 42px;
+                        line-height: 42px;
+                        padding: 10px 20px;
+                        a{
+                            display: block;
+                            color: #333333;
+                            padding-left: 20px;
+                            
+                        }
+                        
+                    }
+                    li:hover a{
+                        background:#FE8A4C ;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+.nav-x{
+    margin-left: 190px;
+    li{
+        float: left;
+        height: 42px;
+        padding: 0 12px;
+        
+        a{
+            position: relative;
+            display: inline-block;
+            font-size: 14px;
+            color: #333;
+            line-height: 42px;
+            height: 42px;
+            padding: 0 21px;
+        }
+    }
+}

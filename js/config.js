@@ -5,6 +5,8 @@ require.config({
 		"cookie":"lib/jquery_plugins/jquery.cookie",
 		"temp":"lib/arttemplate/template-native",
 		"handf":"js/headerfooter",
-		"register":"js/register"
+		"register":"js/register",
+		"login":"js/login",
+		"nav":"js/nav"
 	}
 });

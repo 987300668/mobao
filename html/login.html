@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="../lib/bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/login.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/footer.css"/>
+	<script src="../lib/requirejs/require.js" data-main="../js/index"></script>
+</head>
+<body>
+	<div class="logo">
+		<a href="../index.html"></a>
+		<span>欢迎登录</span>
+	</div>
+	<div class="body-bg">
+		<div class="body-login">
+			<div class="login-box">
+				<div class="login-nav">账号登录</div>
+				<form action="">
+					<div class="input-group">
+					  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					  <input type="text" class="form-control" placeholder="用户名" id="login-username">
+					</div>
+					<div class="input-group">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-eye-close"></i></span>
+						<input type="password" placeholder="请输入密码" class="form-control" id="login-password">
+					</div>
+					<div class="input-group">
+					  <input type="text" class="form-control" placeholder="请输入验证码" id="login-sryzm">
+					  <span class="input-group-addon" style="background: none;font-size: 15px;" id="login-yzm">		  			  	
+					  </span>
+					</div>
+					<button type="button" id="login-bt">登录</button>
+				</form>
+				<div class="box-ft">
+					<a href="/html/register.html">免费注册</a>
+					<span>/</span>
+					<a href="">忘记密码</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer"></div>
+</body>
+</html>

@@ -5,10 +5,147 @@
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/header.css"/>
 	<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 	<script src="lib/requirejs/require.js" data-main="js/index"></script>
 </head>
 <body>
 	<div class="header"></div>
+	<div class="nav"></div>
+	<div class="banner">
+		<div class="banner-box">
+			<div class="lunbo-box">
+				<div class="lunbo" style="background: url(../img/5959a2b0908a1.png)no-repeat center 100%;"></div>
+				<div class="lunbo" style="background: url(../img/5964704439f18.jpeg)no-repeat center 100%;"></div>	
+				<div class="lunbo" style="background: url(../img/597052af77f88.png)no-repeat center 100%;"></div>
+			</div>
+		</div>
+	</div>
+	<div class="list-body">
+		<div class="title">
+			<span>限时抢购</span>
+			<div style="display: inline-block;">
+				<span id="shi">00</span>
+				<span id="fen">00</span>
+				<span id="miao">00</span>
+			</div>
+		</div>
+		<ul class="qianggo com"></ul>
+	
+		<div class="title">精品甄选</div>
+		
+		<ul class="ad com2"></ul>
+		
+		<div class="title">新品推荐</div>
+		
+		<ul class="new com"></ul>
+		
+		<div class="title">猜你喜欢</div>
+		
+		<ul class="like com2"></ul>
+		
+		<div class="title">美食专区</div>
+		
+		<ul class="food com"> 
+			<li><a href=""><img src="img/59531e8c6710f.png"/></a></li>
+		</ul>
+		<ul class="food2 com">
+			<li><a href=""><img src="img/595320332093b.png"/></a></li>
+		</ul>
+		
+		<div class="title">服饰服装</div>
+		
+		<ul class="food2 com">
+			<li><a href=""><img src="img/595324c46736f.png"/></a></li>
+		</ul>
+		<ul class="food com">
+			<li><a href=""><img src="img/5953276b94948.png"/></a></li>
+		</ul>
+		<div class="title">日用精品</div>
+		<ul class="new com"></ul>
+		<ul class="new com"></ul>
+	</div>
 	<div class="footer"></div>
+	
+	
+		<script type="text/html" id="prod_qg">
+		<% for (var i = 0; i < _qg.length; i++) {
+			var prod = _qg[i];
+		%>
+		<li>
+			<a href="" style="display: block;" > 
+			<img src="<%= prod.img %>"/>
+			<p> <%= prod._text %> </p>
+			<span><%= prod.xj %></span>
+			<del><%= prod.yj %></del>
+			<b>立即抢购</b>
+			</a>
+		</li>
+		<% } %>
+		</script>
+		<script type="text/html" id="prod_ad">
+		<% for (var i = 0; i < _ad.length; i++) {
+			var prod = _ad[i];
+		%>
+		<li>
+			<a href=""> 
+			<img src="<%= prod.img %>"/>		
+			</a>
+		</li>
+		<% } %>
+		</script>
+		
+		<script type="text/html" id="prod_new">
+		<% for (var i = 0; i < _new.length; i++) {
+			var prod = _new[i];
+		%>
+		<li>
+			<a href="<%= prod._a %>" style="display: block;" > 
+			<img src="<%= prod.img %>"/>
+			<p> <%= prod._text %> </p>
+			<span><%= prod.xj %></span>			
+			</a>
+		</li>
+		<% } %>
+		</script>
+		<script type="text/html" id="prod_like">
+		<% for (var i = 0; i < _like.length; i++) {
+			var prod = _like[i];
+		%>
+		<li>
+			<a href="<%= prod._a %>"> 
+			<img src="<%= prod.img %>"/>		
+			</a>
+		</li>
+		<% } %>
+		</script>
+		
+		<script type="text/html" id="prod_food">
+		<% for (var i = 0; i < 3; i++) {
+			var prod = _food[i];
+		%>
+		<li>
+			<a href="<%= prod._a %>" style="display: block;" > 
+			<img src="<%= prod.img %>"/>
+			<p> <%= prod._text %> </p>
+			<span><%= prod.xj %></span>			
+			</a>
+		</li>
+		<% } %>
+		</script>
+		
+		<script type="text/html" id="prod_food2">
+		<% for (var i = 3; i < 6; i++) {
+			var prod = _food2[i];
+		%>
+		<li>
+			<a href="<%= prod._a %>" style="display: block;" > 
+			<img src="<%= prod.img %>"/>
+			<p> <%= prod._text %> </p>
+			<span><%= prod.xj %></span>			
+			</a>
+		</li>
+		<% } %>
+		</script>
 </body>
 </html>

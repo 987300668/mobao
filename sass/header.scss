@@ -14,6 +14,7 @@ a, a:visited, a:active{
 a:hover{
     color:#fe6400 ;
 }
+
 .header-nav{
     width:100% ;
     height:$height;
@@ -43,11 +44,31 @@ a:hover{
                
                 li{
                     float: left;
-
+                    margin: 0 10px;
                     width: 65px;
                     text-align: center;
-                   
+                  
+                   .hover-box{
+                       border:1px solid #e5e5e5;
+                       width: 80px;
+                       display:none;
+                       border-top: 1px solid white;
+                       position: absolute;
+                       top:32px;
+                       
+                       
+                       a{
+                           display: block;
+                           height: 25px;
+                           font-size: 11px;
+                           line-height: 25px;
+                       }
+                   }
                 }
+                .hover-li:hover .hover-box{
+                        display: block;
+                        
+                    }
                 li:hover{
                     border-bottom: 1px solid white;
                     border-right: 1px solid #e5e5e5;
